@@ -1,0 +1,30 @@
+:root {
+    --primary: #1363C6;
+    --secondary: #15ACE1;
+    --light: #F4F7FE;
+    --dark: #14183E;
+}
+
+.WhyChoose{
+    background-image: url(/img/bg-hero.png);
+    background-color: var(--primary);
+    background-position: center;
+    background-size: cover;
+}
+@media (max-width: 600px) {
+    .WhyChoose .left{
+        padding: 0.5rem;
+    }
+    .WhyChoose .left h4{
+        font-size: 1.70rem;
+        padding-bottom: 1rem;
+    }
+    .WhyChoose .left .question{
+        width: 100%;
+    }
+    .WhyChoose .left .details{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+}

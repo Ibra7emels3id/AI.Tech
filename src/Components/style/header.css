@@ -1,0 +1,41 @@
+:root {
+    --primary: #1363C6;
+    --secondary: #15ACE1;
+    --light: #F4F7FE;
+    --dark: #14183E;
+}
+
+.header{
+    background-image: url(/img/bg-hero.png);
+    background-color: var(--primary);
+    /* height: 100vh; */
+    z-index: 1000;
+}
+.Navbar h1{
+    font-family: "Ubuntu", sans-serif;
+}
+@media (max-width: 1280px) {
+    .manheader .head{
+        width: 95% !important;
+        margin: auto;
+    }
+}
+@media (max-width: 1150px) {
+    .manheader .head{
+        flex-direction: column;
+    }
+    .manheader .head .left,
+    .manheader .head .rigth{
+        width: 100%;
+        text-align: center;
+    }
+    .manheader .head .left .flex{
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 600px) {
+    .manheader .head .left h4{
+        font-size: 30px !important;
+    }
+}

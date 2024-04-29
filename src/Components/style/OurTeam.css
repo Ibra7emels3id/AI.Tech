@@ -1,0 +1,47 @@
+:root {
+    --primary: #1363C6;
+    --secondary: #15ACE1;
+    --light: #F4F7FE;
+    --dark: #14183E;
+}
+
+/* .rigth .box:hover h4,
+.rigth .box:hover p,
+.rigth .box:hover button {
+    color: white !important;
+} */
+
+/* .rigth .box:hover button {
+    color: var(--dark) !important;
+    background-color: var(--light);
+} */
+
+@media (max-width: 1285px) {
+    .OurTeam {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .OurTeam .Main-OurTeam {
+        flex-direction: column !important;
+    }
+
+    .OurTeam .left,
+    .OurTeam .rigth {
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .OurTeam .left,
+    .OurTeam .rigth {
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .OurTeam .left {
+        padding: 0.5rem;
+    }
+}

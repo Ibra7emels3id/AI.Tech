@@ -1,0 +1,26 @@
+:root {
+    --primary: #1363C6;
+    --secondary: #15ACE1;
+    --light: #F4F7FE;
+    --dark: #14183E;
+}
+.OurRecent .box .imge .text{
+    z-index: 100;
+}
+.OurRecent .box .imge img{
+    transition: 0.5s ease;
+}
+.OurRecent .box .imge::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0), var(--dark));
+    border-radius: 15px;
+    z-index: 10;
+}
+.OurRecent .box .imge:hover img{
+    transform: scale(1.1);
+}
