@@ -5,37 +5,95 @@
     --dark: #14183E;
 }
 
-.header{
+.header {
     background-image: url(/img/bg-hero.png);
     background-color: var(--primary);
     /* height: 100vh; */
     z-index: 1000;
 }
-.Navbar h1{
+
+.Navbar h1 {
     font-family: "Ubuntu", sans-serif;
 }
+
 @media (max-width: 1280px) {
-    .manheader .head{
+    .manheader .head {
         width: 95% !important;
         margin: auto;
     }
 }
+
 @media (max-width: 1150px) {
-    .manheader .head{
+    .manheader .head {
         flex-direction: column;
     }
+
     .manheader .head .left,
-    .manheader .head .rigth{
+    .manheader .head .rigth {
         width: 100%;
         text-align: center;
     }
-    .manheader .head .left .flex{
+
+    .manheader .head .left .flex {
         justify-content: center;
         margin-bottom: 20px;
     }
 }
+@media (max-width: 992px) {
+    .Navbar{
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+    .Navbar .links{
+        display: none;
+    }
+    .Navbar .hamburger{
+        display: block;
+    }
+}
+
 @media (max-width: 600px) {
-    .manheader .head .left h4{
+    .manheader .head .left h4 {
         font-size: 30px !important;
     }
+}
+
+/* List Icons */
+.hamburger {
+    cursor: pointer;
+}
+
+.hamburger input {
+    display: none;
+}
+
+.hamburger svg {
+    /* The size of the SVG defines the overall size */
+    height: 3em;
+    /* Define the transition for transforming the SVG */
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    /* Define the transition for transforming the Stroke */
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+    stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked+svg {
+    transform: rotate(-45deg);
+}
+
+.hamburger input:checked+svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
 }
