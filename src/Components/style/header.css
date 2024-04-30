@@ -15,7 +15,13 @@
 .Navbar h1 {
     font-family: "Ubuntu", sans-serif;
 }
-
+.Navbar .active {
+    color: white;
+}
+.Navbar .links .Pages:hover .absolute{
+    display: flex; 
+    opacity: 1;
+}
 @media (max-width: 1280px) {
     .manheader .head {
         width: 95% !important;

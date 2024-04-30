@@ -23,7 +23,7 @@ import XIcon from '@mui/icons-material/X';
 
 
 
-const OurTeam = () => {
+const MinOurTeam = () => {
     return (
         <>
             <div className="OurTeam bg-blue-50 ">
@@ -105,4 +105,4 @@ const OurTeam = () => {
     );
 }
 
-export default OurTeam;
+export default MinOurTeam;

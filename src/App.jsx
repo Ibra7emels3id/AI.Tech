@@ -1,28 +1,28 @@
 import React from 'react';
 import Navbar from './Components/Navbar';
 import Header from './Components/Header';
-import About from './Components/About';
-import Services from './Components/Services';
+import Pagservices from './Components/Pagservices';
 import WhyChoose from './Components/WhyChoose';
 import OurRecent from './Components/OurRecent';
 import Frequently from './Components/Frequently';
 import NewSletter from './Components/NewSletter';
 import Footer from './Components/Footer';
-import OurTeam from './Components/OurTeam';
-import Testimonial from './Components/Testimonial';
+import MinOurTeam from './Components/MinOurTeam';
+import MinTestimonial from './Components/MinTestimonial';
+import MainAbout from './Components/MainAbout';
 
 const App = () => {
   return (
     <>
       <Header/>
-      <About />
-      <Services/>
+      <MainAbout />
+      <Pagservices/>
       <WhyChoose />
       <OurRecent/>
       <Frequently/>
-      <OurTeam/>
-      <Testimonial/>
-      <NewSletter />
+      <MinOurTeam/>
+      <MinTestimonial/>
+      <NewSletter/>
       <Footer/>
     </>
   );

@@ -6,7 +6,7 @@ import './style/header.css'
 
 // import imge 
 import hero from '../../img/hero-img.png'
-import { css } from '@emotion/react';
+
 
 const Mainheader = () => {
     return (

@@ -14,10 +14,10 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import XIcon from '@mui/icons-material/X';
 
-const About = () => {
+const MainAbout = () => {
     return (
         <>
-            <div className=' About w-11/12  m-auto flex items-center justify-between pt-20'>
+            <div className=' About w-11/12  m-auto flex items-center justify-between py-28'>
                 <div className="left w-2/4 p-10">
                     <div className="About-imge relative  w-12/12  flex items-center">
                         <img className=' w-full  ' src={AboutImg} alt="" />
@@ -55,4 +55,4 @@ const About = () => {
     );
 }
 
-export default About;
+export default MainAbout;

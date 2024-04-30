@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 // import style 
 import './style/header.css'
@@ -8,9 +8,8 @@ import './style/header.css'
 
 // import Icons Material ui 
 import SearchIcon from '@mui/icons-material/Search';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import ListLinks from './ListLinks';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const Navbar = () => {
     const [bgHeader, setbgHeader] = useState('')
@@ -36,35 +35,39 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className={`Navbar flex justify-between px-10  py-5 items-center fixed w-full ${bgHeader}`}>
+            <nav className={`Navbar z-50 flex justify-between px-10  py-5 items-center fixed w-full ${bgHeader}`}>
                 <div className="logo">
                     <Link to='/to'><h1 className=' text-white font-mono text-4xl'>AI.Tech</h1></Link>
                 </div>
                 <div className="links">
-                    <ul className='flex gap-3'>
+                    <ul className='flex gap-3 items-center'>
                         <li>
-                            <Link className=' text-white p-3' to=''>Home</Link>
+                            <NavLink className=' text-zinc-400 active p-3' to='/'>Home</NavLink>
                         </li>
                         <li>
-                            <Link className=' text-zinc-400 p-3 hover:text-white ' to=''>About</Link>
+                            <NavLink className=' text-zinc-400 p-3 hover:text-white ' to='/about'>About</NavLink>
                         </li>
                         <li>
-                            <Link className=' text-zinc-400 p-3 hover:text-white' to=''>services</Link>
+                            <NavLink className=' text-zinc-400 p-3 hover:text-white' to='/services'>services</NavLink>
                         </li>
                         <li>
-                            <Link className=' text-zinc-400 p-3 hover:text-white' to=''>Projects</Link>
+                            <NavLink className=' text-zinc-400 p-3 hover:text-white' to='/Projects'>Projects</NavLink>
+                        </li>
+                        <li className=' relative'>
+                            <Link className='Pages transition-opacity text-zinc-400 p-3 hover:text-white flex items-center '>Pages <KeyboardArrowDownIcon/>
+                            <ul className=' absolute top-12 bg-blue-400 w-44 -left-10 text-center flex flex-col rounded-xl p-3 gap-2 opacity-0 hidden'>
+                                <li className='text-white bg-blue-900 p-1 rounded'><Link to='/featurs'>Featurs</Link></li>
+                                <li className='text-white bg-blue-900 p-1 rounded'><Link to='/ourteam'>Our Team</Link></li>
+                                <li className='text-white bg-blue-900 p-1 rounded'><Link to='/faqs'>FAQs</Link></li>
+                                <li className='text-white bg-blue-900 p-1 rounded'><Link to='/testimonial'>Testimonial</Link></li>
+                            </ul>
+                            </Link>
                         </li>
                         <li>
-                            <Link className=' text-zinc-400 p-3 hover:text-white' to=''>services</Link>
+                            <NavLink className=' text-zinc-400 p-3 hover:text-white' to='/Contact'>Contact</NavLink>
                         </li>
                         <li>
-                            <Link className=' text-zinc-400 p-3 hover:text-white' to=''>Pages</Link>
-                        </li>
-                        <li>
-                            <Link className=' text-zinc-400 p-3 hover:text-white' to=''>Contact</Link>
-                        </li>
-                        <li>
-                            <Link className=' text-zinc-400 p-3 hover:text-white' to=''><SearchIcon /></Link>
+                            <button className=' text-zinc-400 p-3 hover:text-white' to=''><SearchIcon /></button>
                         </li>
                     </ul>
                 </div>
