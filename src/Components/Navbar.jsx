@@ -64,7 +64,7 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li>
-                            <NavLink className=' text-zinc-400 p-3 hover:text-white' to='/Contact'>Contact</NavLink>
+                            <NavLink className=' text-zinc-400 p-3 hover:text-white' to='/contact'>Contact</NavLink>
                         </li>
                         <li>
                             <button className=' text-zinc-400 p-3 hover:text-white' to=''><SearchIcon /></button>

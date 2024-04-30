@@ -1,0 +1,8 @@
+@media (max-width: 700px) {
+    .Contact p{
+        width: 100% !important;
+    }
+    .Contact .Forms{
+        width: 100% !important;
+    }
+}

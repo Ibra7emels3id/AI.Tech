@@ -11,6 +11,7 @@ import OurTeam from './Pages/OurTeam.jsx';
 import Faqs from './Pages/Faqs.jsx';
 import Testimonial from './Pages/Testimonial.jsx';
 import Error404 from './Pages/Error-404.jsx';
+import Contact from './Pages/Contact.jsx';
 
 
 
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
   {
     path: "/testimonial",
     element: <Testimonial />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
   },
 ]);
 
