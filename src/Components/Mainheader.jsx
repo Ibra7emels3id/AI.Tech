@@ -28,7 +28,7 @@ const Mainheader = () => {
                         <div className="imge  w-12/12  flex items-center">
                             <img className=' px-10 w-full' src={hero} alt="" />
                         </div>
-                    </div>
+                    </div>  
                 </div>
             </div>
         </>

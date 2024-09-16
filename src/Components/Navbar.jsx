@@ -35,7 +35,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className={`Navbar z-50 flex justify-between px-10  py-5 items-center fixed w-full ${bgHeader}`}>
+            <nav className={`Navbar z-[1000] flex justify-between px-10  py-5 items-center fixed w-full ${bgHeader}`}>
                 <div className="logo">
                     <Link to='/to'><h1 className=' text-white font-mono text-4xl'>AI.Tech</h1></Link>
                 </div>

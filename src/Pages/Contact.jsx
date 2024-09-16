@@ -4,19 +4,14 @@ import { Link } from 'react-router-dom';
 // impoer style css 
 import '../Components/style/Contact.css'
 
-
 // import imge 
 import hero from '../../img/hero-img.png'
 import Navbar from '../Components/Navbar';
 
-// import Icons 
-import WarningIcon from '@mui/icons-material/Warning';
-
 // import Components
 import Footer from '../Components/Footer';
 import NewSletter from '../Components/NewSletter';
-import Pagservices from '../Components/Pagservices';
-import Testimonial from '../Components/MinTestimonial';
+
 
 
 const Contact = () => {
@@ -63,5 +58,4 @@ const Contact = () => {
         </>
     );
 }
-
 export default Contact;
